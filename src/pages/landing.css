@@ -1,0 +1,78 @@
+.landing-section {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80")
+      no-repeat center center/cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-pic-wrapper {
+  transition: transform 0.4s;
+}
+
+.profile-pic {
+  max-width: 250px;
+  border: 5px solid white;
+  transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Hover animation class */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+/* Sliding animated text */
+.animated-text {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.animated-text span {
+  position: absolute;
+  width: 100%;
+  animation: slide 8s infinite;
+  opacity: 0;
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text span:nth-child(2) {
+  animation-delay: 2s;
+}
+.animated-text span:nth-child(3) {
+  animation-delay: 4s;
+}
+.animated-text span:nth-child(4) {
+  animation-delay: 6s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
