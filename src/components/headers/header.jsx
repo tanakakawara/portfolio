@@ -121,22 +121,6 @@ const NavLink = styled.a`
   }
 `;
 
-const IconLink = styled.a`
-  color: ${SPARKLING_BLUE};
-  font-size: 1.47rem;
-  margin-left: 0.5rem;
-  display: flex;
-  align-items: center;
-  transition:
-    color 0.17s,
-    transform 0.17s;
-
-  &:hover {
-    color: #6d28d9; // Adjust as needed for hover state
-    transform: scale(1.16);
-  }
-`;
-
 const DarkModeBtn = styled.button`
   background: ${SPARKLING_BLUE};
   color: ${WHITE};

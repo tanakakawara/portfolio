@@ -216,6 +216,9 @@ export default function Projects() {
                 </CardButton>
               </ButtonRow>
             </CardBody>
+            <div className="btn-row" style={{ padding: "1rem" }}>
+              View More
+            </div>
           </Card>
         ))}
       </CardsGrid>

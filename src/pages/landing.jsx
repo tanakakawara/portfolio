@@ -11,10 +11,6 @@ const bgImage = bg;
 // Developer's profile picture
 const devImage = pp;
 
-// Download image URL (example)
-const downloadImage =
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80";
-
 const pulse = keyframes`
   0% { box-shadow: 0 0 0 0 rgba(30,144,255,0.3); }
   70% { box-shadow: 0 0 0 20px rgba(30,144,255,0); }
